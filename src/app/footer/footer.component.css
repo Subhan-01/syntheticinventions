@@ -1,0 +1,29 @@
+.f_social_icon a {
+    color: var(--active);
+    transition: color 0.3s ease; 
+}
+
+.f_social_icon a:hover
+{
+    background-color: var(--bg-white-somke);
+    border: var(--bg-white-somke);
+}
+.f_social_icon a:hover {
+    color: #7289DA; 
+}
+
+
+.f_social_icon a.fab.fa-linkedin:hover {
+    color: #0077b5; 
+}
+
+.f_social_icon a.fab.fa-twitter:hover {
+    color: #1DA1F2; 
+}
+.f_social_icon a.fab.fa-instagram:hover {
+    color: #E1306C; 
+}
+
+.f_social_icon a.fab.fa-behance:hover {
+    color: #1769ff; 
+}

@@ -1,0 +1,226 @@
+<!-- Hero Section Of This Page -->
+<div class="heroBgs bg-orange">
+    <div class="HeroCentreHEading">
+        <h1 class="section-heading" style=" text-transform: uppercase !important;
+    letter-spacing: 3px !important; color: var(--active) !important;">Our Best Portfolio: <br>
+<h2 style="text-transform: uppercase; margin-top: 15px;">Explore our finest creations, where passion meets innovation:)
+</h2>     
+</h1>
+    </div>
+</div>
+
+
+
+
+
+
+
+<section class="our-portfolio">
+    <div class="main-heading">
+        <p class="section-small-heading section-text-small">
+            <span></span>
+            Portfolio
+            <span></span>
+        </p>
+        <h1 class="text-center mt-1 mb-5 section-heading">Our Work Speaks for Itself</h1>
+        <h2 class="section-des">
+            Browse through our portfolio to see how we’ve helped our clients achieve their goals. Each project
+            reflects our commitment to quality and innovation.
+        </h2>
+    </div>
+
+    <div class="col-12 text-center tab-buttons">
+        <button (click)="selectPortfolioTab('website')" [class.active]="currentPortfolioTab === 'website'"
+            class="btn rounded-pill px-4 pt-2 btn-warning mx-2 mt-3 active">Websites</button>
+        <button (click)="selectPortfolioTab('logo')" [class.active]="currentPortfolioTab === 'logo'"
+            class="btn rounded-pill px-4 pt-2 btn-warning mx-2 mt-3 ">Logos</button>
+        <button (click)="selectPortfolioTab('gamingLogo')" [class.active]="currentPortfolioTab === 'gamingLogo'"
+            class="btn rounded-pill px-4 pt-2 btn-warning mx-2 mt-3 ">Gaming Logos</button>
+        <button (click)="selectPortfolioTab('banner')" [class.active]="currentPortfolioTab === 'banner'"
+            class="btn rounded-pill px-4 pt-2 btn-warning mx-2 mt-3 ">Banners</button>
+        <button (click)="selectPortfolioTab('overlay')" [class.active]="currentPortfolioTab === 'overlay'"
+            class="btn rounded-pill px-4 pt-2 btn-warning mx-2 mt-3 ">Overlays</button>
+            <button (click)="selectPortfolioTab('pack')" [class.active]="currentPortfolioTab === 'pack'"
+            class="btn rounded-pill px-4 pt-2 btn-warning mx-2 mt-3 ">Packs</button>
+        <button (click)="selectPortfolioTab('intro')" [class.active]="currentPortfolioTab === 'intro'"
+            class="btn rounded-pill px-4 pt-2 btn-warning mx-2 mt-3 ">Intros</button>
+        <button (click)="selectPortfolioTab('screen')" [class.active]="currentPortfolioTab === 'screen'"
+            class="btn rounded-pill px-4 pt-2 btn-warning mx-2 mt-3 ">Screens</button>
+        <button (click)="selectPortfolioTab('video')" [class.active]="currentPortfolioTab === 'video'"
+            class="btn rounded-pill px-4 pt-2 btn-warning mx-2 mt-3 ">Video Edits</button>
+        <button (click)="selectPortfolioTab('poster')" [class.active]="currentPortfolioTab === 'poster'"
+            class="btn rounded-pill px-4 pt-2 btn-warning mx-2 mt-3 ">Posters</button>
+        <button (click)="selectPortfolioTab('thumnail')" [class.active]="currentPortfolioTab === 'thumnail'"
+            class="btn rounded-pill px-4 pt-2 btn-warning mx-2 mt-3 ">Thumnails</button>
+        <button (click)="selectPortfolioTab('emotes')" [class.active]="currentPortfolioTab === 'emotes'"
+            class="btn rounded-pill px-4 pt-2 btn-warning mx-2 mt-3 ">Emotes</button>
+
+    </div>
+
+    <div class="tab-content">
+
+        <div *ngIf="currentPortfolioTab === 'website'">
+            <div class="portfolio-image">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 p-3" *ngFor="let image of websiteImages">
+                        <img [src]="image.src" [alt]="image.alt">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="currentPortfolioTab === 'logo'">
+            <div class="portfolio-image">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 p-3" *ngFor="let image of logoImages">
+                        <img [src]="image.src" [alt]="image.alt">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div *ngIf="currentPortfolioTab === 'gamingLogo'">
+            <div class="portfolio-image">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 p-3" *ngFor="let image of gamingLogoImages">
+                        <img [src]="image.src" [alt]="image.alt">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+
+        <div *ngIf="currentPortfolioTab === 'banner'">
+            <div class="portfolio-image">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 p-3" *ngFor="let image of bannerImages">
+                        <img [src]="image.src" [alt]="image.alt">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div *ngIf="currentPortfolioTab === 'overlay'">
+            <div class="portfolio-image">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 p-3" *ngFor="let video of overlayVideo">
+                        <video autoplay loop>
+                            <source [src]="video.src" [type]="video.type">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div *ngIf="currentPortfolioTab === 'pack'">
+        <div class="portfolio-image">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 p-3" *ngFor="let video of packVideo">
+                    <video autoplay loop>
+                        <source [src]="video.src" [type]="video.type">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- thumnails -->
+    <div *ngIf="currentPortfolioTab === 'thumnail'">
+        <div class="portfolio-image">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 p-3" *ngFor="let video of thumnailVideos">
+                    <video autoplay loop>
+                        <source [src]="video.src" [type]="video.type">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 p-3" *ngFor="let image of thumnailImages">
+                    <img [src]="image.src" [alt]="image.alt">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- emotes -->
+
+    <div *ngIf="currentPortfolioTab === 'emotes'">
+        <div class="portfolio-image">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 p-3" *ngFor="let video of emotesVideo">
+                    <video autoplay loop>
+                        <source [src]="video.src" [type]="video.type">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-12 p-3" *ngFor="let image of emotesImages">
+                    <img [src]="image.src" [alt]="image.alt">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- poster -->
+    <div *ngIf="currentPortfolioTab === 'poster'">
+        <div class="portfolio-image">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 p-3" *ngFor="let image of posterImages">
+                    <img [src]="image.src" [alt]="image.alt">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- intro -->
+    <div *ngIf="currentPortfolioTab === 'intro'">
+        <div class="portfolio-image">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 p-3" *ngFor="let video of introVideos">
+                    <video autoplay loop>
+                        <source [src]="video.src" [type]="video.type">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- screen -->
+    <div *ngIf="currentPortfolioTab === 'screen'">
+        <div class="portfolio-image">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 p-3" *ngFor="let video of screenVideos">
+                    <video autoplay loop>
+                        <source [src]="video.src" [type]="video.type">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- video edits -->
+    <div *ngIf="currentPortfolioTab === 'video'">
+        <div class="portfolio-image">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-12 p-3" *ngFor="let video of videoVideos">
+                    <video autoplay loop>
+                        <source [src]="video.src" [type]="video.type">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <div class="see-more-btn mt-1">
+        <a class="btn my-btn" routerLink="/contactUs">Lets Start</a>
+    </div>
+</section>

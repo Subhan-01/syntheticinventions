@@ -1,0 +1,24 @@
+section
+{
+    padding: 0 !important;
+}
+  
+
+
+.row
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:992px) {
+    .heading-alightment
+    {
+        font-size: 15px !important;
+    text-align: left !important;
+    
+    }
+    
+        
+    }

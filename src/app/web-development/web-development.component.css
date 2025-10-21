@@ -1,0 +1,65 @@
+
+
+/* section {
+    padding: 50px 0px 0 0px !important;
+}
+ */
+ section
+ {
+     padding: 0 !important;
+ }
+.quote .quote-image
+{
+    background: url('../../assets/img/Group-3-2-1.png');
+    /* background-repeat: no-repeat;
+    background-size: 100% 100%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.quote-details
+{
+    padding: 170px 0px 120px 0px;
+}
+
+@media (max-width:992px) {
+    .quote-details
+    {
+        text-align: center;
+    }
+}
+
+@media (max-width:767px) {
+    .quote-details
+    {
+        text-align: center;
+        padding: 10px !important;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .container, .container-md, .container-sm {
+        max-width: fit-content !important;
+    }
+}
+
+
+
+.row
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:992px) {
+    .heading-alightment
+    {
+        font-size: 15px !important;
+    text-align: left !important;
+    
+    }
+    
+        
+    }

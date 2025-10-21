@@ -1,0 +1,55 @@
+.youtube-main-text
+{
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 500;
+   
+}
+@media (max-width:992px) {
+    .youtube-main-text
+{
+    font-size: 15px;
+    line-height: 25px;
+   
+}
+.services-paragraph
+{
+    line-height: 23px !important;
+    font-size: 15px !important;
+}
+.services-small-headings
+{
+    font-size: 15px !important;
+}
+}
+
+
+
+
+/* Ensures images/videos appear first on small screens */
+@media (max-width: 991px) {
+    .services-image {
+        order: 1; /* Make image/video first */
+    }
+    .services-text {
+        order: 2; /* Make text second */
+    }
+}
+
+
+@media (max-width:992px) {
+    .heading-alightment
+    {
+        font-size: 15px !important;
+    text-align: left !important;
+    
+    }
+    
+        
+    }
+.row
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

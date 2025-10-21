@@ -1,0 +1,47 @@
+<nav id="navbar"  class="navbar navbar-expand-lg navbar-light fixed-top py-3">
+    <div class="container">
+    
+        <a class="navbar-brand" href="#">
+            <img src="assets/img/Logo1 png-01.png"  alt="Porto">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="color: var(--active) !important;"></span>
+        </button>
+ 
+        <div class="collapse navbar-collapse " id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="dropdown-item" routerLink="/">Home</a>
+                    <i class="fas fa-home-lg icon"></i>
+                </li>
+                <li class="nav-item">
+                    <a class="dropdown-item" routerLink="/about">About</a>
+                    <i class="fas fa-users-cog icon"></i>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="dropdown-item main-item servicemaiin" routerLink="/services">Services</a>
+                    <i class="fas fa-network-wired icon servicemaiinIcon"></i>                    
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" routerLink="/webDevelopmentService" style=" opacity: 1 !important">Web Development</a></li>
+                        <li><a class="dropdown-item" routerLink="/appDevelopmentService" style=" opacity: 1 !important">App Development</a></li>
+                        <li><a class="dropdown-item" routerLink="/digitalMarketingService" style=" opacity: 1 !important">Digital Marketing</a></li>
+                        <li><a class="dropdown-item" routerLink="/graphicDesigningService" style=" opacity: 1 !important">Graphic Designing</a></li>
+                        <li><a class="dropdown-item" routerLink="/videoEditingService" style=" opacity: 1 !important">Video Editing</a></li>
+                        <li><a class="dropdown-item" routerLink="/seoOptimizationService" style=" opacity: 1 !important">SEO</a></li>
+                        <li><a class="dropdown-item" routerLink="/socialMediaService" style=" opacity: 1 !important">Social Media Handles</a></li>
+                        <li><a class="dropdown-item" routerLink="/youtubeService" style=" opacity: 1 !important">Youtube</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="dropdown-item" routerLink="/portfolio">Portfolio</a>
+                    <i class="fas fa-images icon"></i>
+                </li>
+                <li class="nav-item">
+                    <a class="dropdown-item" routerLink="/contactUs">Contact Us</a>
+                    <i class="fas fa-address-book icon"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

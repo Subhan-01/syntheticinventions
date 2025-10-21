@@ -1,0 +1,16 @@
+.contatc-form
+{
+    display: flex;
+    flex-direction: column;
+}
+input
+{
+    height: calc(3.5rem + 2px);
+    padding: 1rem .75rem;
+    background-color: var(--bg-white-somke);
+}
+textarea
+{
+    background-color: var(--bg-white-somke);
+    height: 150px;
+}
